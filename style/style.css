@@ -30,7 +30,7 @@ body {
   top: 0;
 }
 
-.container > div {
+.container>div {
   position: absolute;
   left: 0;
   right: 0;
@@ -41,7 +41,7 @@ body {
   font-size: 4.5rem;
 }
 
-.one > img {
+.one>img {
   vertical-align: middle;
   margin-bottom: 10px;
   max-width: 100%;
@@ -298,6 +298,7 @@ body {
     font-weight: lighter;
   }
 }
+
 /* CSS */
 .button-46 {
   align-items: center;
@@ -339,5 +340,7 @@ body {
     font-size: 20px;
     min-width: 200px;
     padding: 14px 16px;
+    left: 38%;
+    top: 43%;
   }
 }
