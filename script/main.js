@@ -300,22 +300,21 @@ const animationTimeline = () => {
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
     tl.restart();
-   let myAudio = document.getElementById("song")
-
-   myAudio.pause();
-   myAudio.currentTime = 0;
+    playmusic()
   });
 };
 // Run fetch and animation in sequence
-fetchData();
 
-function playmusic(){
-  console.log("playmusic")
-  let myAudio = document.getElementById("song")
-  myAudio.currentTime = 5;
-
-  myAudio.play();
-}
-setTimeout(() => {
+let show=document.getElementById("show")
+show.addEventListener("click",()=>{
+  fetchData();
+  show.style.display="none"
   playmusic()
-}, 33000);
+})
+function playmusic(){
+  setTimeout(() => {
+    let myAudio = document.getElementById("song")
+    myAudio.currentTime = 5;
+    myAudio.play();
+  }, 33000);
+}
